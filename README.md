@@ -19,8 +19,10 @@
 136行new_tp为Flask的url路径，里面的new_tp是实现玩家传送玩家的方法  
 136行new_people为Flask的url路径，里面的hello_world是实现发送新手礼包的方法  
 136行add_blance为Flask的url路径，里面的add_blance是实现增加玩家余额的方法  
-249行ftp_read_login方法是实现循环读取登录日志文件，来进行欢迎玩家上下线的方法  
-最后的295行开始就是开启多线程，一个线程是开启Flask框架的线程，一个线程是开启欢迎玩家上下线的线程  
+247行add blance(msg)方法是调用SCUM窗口发送玩家上下线的方法
+266行run flask方法是运行Flask框架的方法
+270行ftp_read_login方法是实现循环读取登录日志文件，来进行欢迎玩家上下线的方法  
+最后的316行开始就是开启多线程，一个线程是开启Flask框架的线程，一个线程是开启欢迎玩家上下线的线程  
 
 # 一点小小建议  
 不会Python的最好不要研究代码，因为本来就是屎山，主要用到多线程，Flask，还有操作windows窗口的api

@@ -244,6 +244,27 @@ def add_blance():
     else:
         return "没有这个pid和这个窗口"
 
+def add_blance(msg):
+    activate_scum_window()
+    activate_and_lock_keyboard()
+    p = psutil.Process(PID)
+    if p.name() == "SCUM.exe":
+        windows = gw.getWindowsWithTitle('SCUM  ')
+        if len(windows) > 0:
+            pyautogui.write("t")
+            time.sleep(0.1)
+            foo1 = msg
+            paste(foo1)
+            time.sleep(0.1)
+            pyautogui.press('enter')
+        else:
+            return "没有这个窗口"
+        unlock_keyboard()
+        return "成功"
+    else:
+        return "没有这个pid和这个窗口"
+def run_flask():
+    app.run()
 
 
 def ftp_read_login():
